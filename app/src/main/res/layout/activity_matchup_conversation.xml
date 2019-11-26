@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#f0dfbb"
+    tools:context=".MatchupConversationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="CONVERSATIONS"
+        android:textColor="#782e2c"
+        android:padding="10dp"
+        android:background="@drawable/bottomborder"
+        android:fontFamily="@font/titillium"
+        android:autoSizeTextType="uniform"
+        android:id="@+id/conversation"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="#c7cdd8"
+        android:layout_weight="7">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:id="@+id/btnCheckRequests"
+            android:fontFamily="@font/titillium"
+            android:autoSizeTextType="uniform"
+            android:text="CHECK REQUEST"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="73"
+        android:id="@+id/rvMatchUpList"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/topborder"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/matchupcolorlegend"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:textColor="#3b3561"
+                android:id="@+id/txtfoundbyyou"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/titillium"
+                android:text="FOUND BY YOU"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:textColor="#dd1c1a"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/titillium"
+                android:id="@+id/txtotherpartyfoundyou"
+                android:text="OTHER PARTY FOUND YOU"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

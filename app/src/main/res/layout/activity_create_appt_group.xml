@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0dfbb"
+    tools:context=".CreateApptGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:id="@+id/txtCreateAppt"
+        android:background="@drawable/bottomborder"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:textColor="#203f58"
+            android:fontFamily="@font/titillium"
+            android:gravity="center"
+            android:background="@drawable/bottomborder"
+            android:text="&lt;"
+            android:autoSizeTextType="uniform"
+            android:id="@+id/btnApptGroupToApptActivity"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:autoSizeTextType="uniform"
+            android:id="@+id/createappt1"
+            android:text="CREATE APPOINTMENT"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:textColor="#5e2a40"
+            android:fontFamily="@font/titillium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/txtInstructions"
+        android:autoSizeTextType="uniform"
+        android:textColor="#203f58"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:inputType="textMultiLine"
+        android:gravity="center"
+        android:text="Please select the friend you want to \ncreate appointment for:"
+        android:fontFamily="@font/titillium"
+        android:layout_below="@+id/txtCreateAppt"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInstructions"
+        android:id="@+id/rvApptPartyList"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

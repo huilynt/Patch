@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0dfbb"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MoreOptionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="MORE"
+        android:textColor="#782e2c"
+        android:padding="10dp"
+        android:id="@+id/txtMore"
+        android:fontFamily="@font/titillium"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:id="@+id/btnFriends"
+            android:background="@drawable/rightborder"
+            android:gravity="center_vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:id="@+id/imgFriends"
+                android:src="@drawable/friends"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                android:id="@+id/txtFriends"
+                android:text="FRIENDS"
+                android:gravity="center"
+                android:fontFamily="@font/titillium"
+                android:textColor="#203f58"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:id="@+id/btnLanguage"
+            android:weightSum="100"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:id="@+id/imgLanguage"
+                android:src="@drawable/language"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                android:text="LANGUAGE"
+                android:id="@+id/txtLanguage"
+                android:gravity="center"
+                android:fontFamily="@font/titillium"
+                android:textColor="#203f58"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="100"
+            android:id="@+id/btnHelp"
+            android:background="@drawable/rightborder"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:id="@+id/imgHelp"
+                android:src="@drawable/help"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:text="HELP"
+                android:id="@+id/txtHelp"
+                android:gravity="center"
+                android:fontFamily="@font/titillium"
+                android:textColor="#203f58"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="100"
+            android:id="@+id/btnSignOut"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:id="@+id/imgSignOut"
+                android:src="@drawable/signout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:autoSizeTextType="uniform"
+                android:text="SIGN OUT"
+                android:maxLines="1"
+                android:id="@+id/txtSignOut"
+                android:gravity="center"
+                android:fontFamily="@font/titillium"
+                android:textColor="#203f58"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="BACK"
+        android:padding="10dp"
+        android:fontFamily="@font/titillium"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/topborder"
+        android:id="@+id/btnBack"/>
+
+</LinearLayout>
