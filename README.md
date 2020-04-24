@@ -1,7 +1,7 @@
 # Patch
 An Android application that targets the loneliness of elderly.
 Match up with other users who have similar hobbies and interests, connect & socialize with new friends.
-[Click here for more info](https://drive.google.com/file/d/1GopYB55YDw7E_Qt6bZ2MmxX2O45MJoYt/view?usp=sharing)
+[Click here for more info](https://drive.google.com/file/d/1GopYB55YDw7E_Qt6bZ2MmxX2O45MJoYt/view?usp=sharing) or [here](https://tayhuilin.wixsite.com/portfolio/blog/categories/portfolio-2) for the development journey!
 
 #### Module
 * Portfolio 2 (P2)
